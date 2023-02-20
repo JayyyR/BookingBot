@@ -3,8 +3,10 @@ package com.joeracosta.bookingbot.android
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.tooling.preview.Preview
@@ -27,8 +29,10 @@ class MainActivity : ComponentActivity() {
                     bottomBar = {
                         BottomNavigation(navController = navController)
                     }
-                ) {
-                    NavigationGraph(navController = navController)
+                ) { values ->
+                    Surface(modifier = Modifier.padding(values)) {
+                        NavigationGraph(navController = navController)
+                    }
                 }
             }
         }
@@ -65,7 +69,12 @@ fun BottomNavigation(navController: NavController) {
         val currentRoute = navBackStackEntry?.destination?.route
         items.forEach { item ->
             BottomNavigationItem(
-                icon = { Icon(rememberVectorPainter(image = item.icon), contentDescription = item.title) },
+                icon = {
+                    Icon(
+                        rememberVectorPainter(image = item.icon),
+                        contentDescription = item.title
+                    )
+                },
                 label = {
                     Text(
                         text = item.title,

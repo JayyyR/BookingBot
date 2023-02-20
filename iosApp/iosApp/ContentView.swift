@@ -7,7 +7,23 @@ struct ContentView: View {
     
     
     var body: some View {
-        Text(viewModel.text)
+        TabView {
+            HomeScreen()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+            AuthScreen()
+                .tabItem {
+                    Image(systemName: "person.badge.key.fill")
+                    Text("Auth")
+                }
+            RestaurantsScreen()
+                .tabItem {
+                    Image(systemName: "fork.knife")
+                    Text("Restaurants")
+                }
+        }
     }
 }
 
