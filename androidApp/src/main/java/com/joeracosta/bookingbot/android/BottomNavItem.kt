@@ -1,6 +1,5 @@
-package com.example.kotlinmultiplatformsandbox.android
+package com.joeracosta.bookingbot.android
 
-import android.graphics.drawable.Icon
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.AccountBox
 import androidx.compose.material.icons.rounded.Home

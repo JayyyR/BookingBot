@@ -74,7 +74,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.example.kotlinmultiplatformsandbox"
+    namespace = "com.joeracosta.bookingbot"
     compileSdk = 33
     defaultConfig {
         minSdk = 24

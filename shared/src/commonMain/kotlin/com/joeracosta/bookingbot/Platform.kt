@@ -1,4 +1,4 @@
-package com.example.kotlinmultiplatformsandbox
+package com.joeracosta.bookingbot
 
 interface Platform {
     val name: String

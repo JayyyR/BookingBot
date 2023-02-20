@@ -1,4 +1,4 @@
-package com.example.kotlinmultiplatformsandbox
+package com.joeracosta.bookingbot
 
 class AndroidPlatform : Platform {
     override val name: String = "Android ${android.os.Build.VERSION.SDK_INT}"

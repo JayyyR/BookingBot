@@ -1,7 +1,6 @@
-package com.example.kotlinmultiplatformsandbox
+package com.joeracosta.bookingbot
 
 import kotlinx.serialization.SerialName
-import kotlinx.serialization.Serializable
 
 @kotlinx.serialization.Serializable
 data class RocketLaunch(

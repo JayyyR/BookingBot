@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "KotlinMultiplatformSandbox"
+rootProject.name = "BookingBot"
 include(":androidApp")
 include(":shared")

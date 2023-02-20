@@ -1,4 +1,4 @@
-package com.example.kotlinmultiplatformsandbox
+package com.joeracosta.bookingbot
 
 data class Venue(
     val id: String,

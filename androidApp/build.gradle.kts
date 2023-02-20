@@ -4,10 +4,10 @@ plugins {
 }
 
 android {
-    namespace = "com.example.kotlinmultiplatformsandbox.android"
+    namespace = "com.joeracosta.bookingbot.android"
     compileSdk = 33
     defaultConfig {
-        applicationId = "com.example.kotlinmultiplatformsandbox.android"
+        applicationId = "com.joeracosta.bookingbot"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.example.kotlinmultiplatformsandbox
+package com.joeracosta.bookingbot
 
 import io.ktor.client.*
 import io.ktor.client.plugins.contentnegotiation.*
